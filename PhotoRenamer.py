@@ -129,7 +129,8 @@ def sort_and_move_photos(filenames: list[str], output_path: str, root: str, lang
             day = date[0][6:]
             os.makedirs(output_path + "\\" + year, exist_ok=True)
 
-            destination_path = output_path + "\\" + year + "\\" + month_replacement.get(language).get(month)
+            destination_path = (output_path + "\\" + year + "\\"
+                                + month + "_" + month_replacement.get(language).get(month))
             os.makedirs(destination_path, exist_ok=True)
             if os.path.exists(destination_path + "\\" + filename):
                 extension_pattern = r"\.[a-zA-Z]{3}"
