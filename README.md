@@ -1,2 +1,2 @@
-# photo_renamer
-Simple python script to rename photos in phone format and sort by year and month
+# photo_sorter
+Simple python script to sort phone photos by year and month
